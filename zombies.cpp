@@ -5,12 +5,36 @@
 class NormZombie {
 
 public:
+	NormZombie() {
+		pos = 0;
+		speed = 20;
+		health = 100;
+	}
 	void move() {
 		pos = pos + speed;
 	}
 
 private:
-	int pos = 0;
-	int speed = 20;
-	int health = 100;
+	int pos;
+	int speed;
+	int health;
 };
+
+class FastZombie {
+public:
+	FastZombie() {
+		pos = 0;
+		speed = 80;
+		health = 100;
+	}
+	void move() {
+		pos = pos + speed;
+	}
+
+private:
+	int pos;
+	int speed;
+	int health;
+};
+
+
