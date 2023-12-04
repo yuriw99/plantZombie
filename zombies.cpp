@@ -7,6 +7,7 @@ public:
 	int pos;
 	int speed;
 	int health;
+
 void move() {
 		pos = pos + speed;
 	}
